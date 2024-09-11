@@ -8,7 +8,7 @@ type User struct {
 	ID       uint   `gorm:"primaryKey"`
 	Name     string `json:"name"`
 	Email    string `json:"email" gorm:"unique"`
-	Password string `json:"-"` // ไม่แสดงรหัสผ่านใน JSON response
+	Password string `json:"-"` // ไม่แสดงรหัสผ่าน
 }
 
 // SetPassword รับรหัสผ่านเป็นข้อความธรรมดาและแฮชมัน
